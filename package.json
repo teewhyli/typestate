@@ -1,0 +1,20 @@
+{
+  "name": "typestate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/src/main.ts",
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "rm -rf ./dist/ && ttsc",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec \"ts-node\" src/main.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.14",
+    "ts-patch": "^1.4.5",
+    "ttypescript": "^1.5.12",
+    "typescript": "^4.4.4",
+    "typescript-transform-extensions": "^1.0.1"
+  }
+}
